@@ -39,6 +39,7 @@ clean:
 	    echo "Will use the one found here: ${OUTDIR}/helm-install/helm" ;\
 	  else \
 	    echo "The binary will be downloaded to ${OUTDIR}/helm-install/helm" ;\
+            mkdir -p "${OUTDIR}/helm-install/helm" ;\
 	    os=$$(uname -s | tr '[:upper:]' '[:lower:]') ;\
 	    arch="" ;\
 	    case $$(uname -m) in \
